@@ -5,6 +5,7 @@ from db import check_login, check_phone_number, add_user, read_excel_data
 # Hardcode ma'lumotlarni qo'shish
 add_user('admin', 'admin123', '+998904110135')
 add_user('aaaa', 'aaaa1', '+998975300005')
+add_user('supportAdmin', 'sAdmin123', '+998777777735')
 
 # Conversation states
 USERNAME, PASSWORD, PHONE_NUMBER, WEB_APP_OPENED = range(4)
@@ -118,7 +119,7 @@ if __name__ == '__main__':
     )
 
     app.add_handler(conv_handler)
-
+    
     print("Bot ishlamoqda...")
     app.run_polling()
 
